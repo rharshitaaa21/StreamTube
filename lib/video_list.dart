@@ -9,7 +9,7 @@ class VideoList extends StatelessWidget {
   final bool isHorizontalList;
 
   const VideoList(
-      {required this.listData,
+      { required this.listData,
       this.isMiniList = false,
       this.isHorizontalList = false});
 

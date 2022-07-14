@@ -11,14 +11,14 @@ class YoutubeModel {
 
   YoutubeModel(
       {required this.title,
-      required this.description,
-      required this.thumbNail,
-      required this.publishedTime,
+     required this.description,
+     required this.thumbNail,
+     required this.publishedTime,
       required this.channelTitle,
-      required this.channelAvatar,
-      required this.viewCount,
-      required this.likeCount,
-      required this.dislikeCount});
+     required this.channelAvatar,
+     required this.viewCount,
+     required this.likeCount,
+     required this.dislikeCount});
 }
 
 List<YoutubeModel> youtubeData = [

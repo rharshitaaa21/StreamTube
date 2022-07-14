@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'youtube_main.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
