@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube/screens/home.dart';
+import 'package:youtube/screens/trending.dart';
 
 class YoutubeMain extends StatefulWidget {
   @override
@@ -19,9 +20,7 @@ class _YoutubeMainState extends State<YoutubeMain> {
   Widget build(BuildContext context) {
     List<Widget> _screens = [
       HomeScreen(),
-      Center(
-        child: Text("Trending"),
-      ),
+      TrendingScreen(),
       Center(
         child: Text("Add"),
       ),
@@ -65,15 +64,16 @@ class _YoutubeMainState extends State<YoutubeMain> {
           onTap: _onTapped,
           items: [
             BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
-            BottomNavigationBarItem(label: "Shots", icon: Icon(Icons.tiktok)),
             BottomNavigationBarItem(
-              label: "",
-              icon: Icon(Icons.add_circle_outline_outlined),
+              label: "Trending",
+              icon: Icon(Icons.whatshot),
             ),
             BottomNavigationBarItem(
-                label: "Subscription", icon: Icon(Icons.subscriptions)),
-            BottomNavigationBarItem(
-                label: "Library", icon: Icon(Icons.library_add)),
+              label: "Subscription",
+              icon: Icon(Icons.subscriptions),
+            ),
+            BottomNavigationBarItem(label: "Inbox", icon: Icon(Icons.mail)),
+            BottomNavigationBarItem(label: "Library", icon: Icon(Icons.folder)),
           ]),
     );
   }
