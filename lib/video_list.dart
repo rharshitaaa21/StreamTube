@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:youtube/models/youtube_model.dart';
 import 'package:youtube/screens/videodetail.dart';
 
-
 class VideoList extends StatelessWidget {
   final List<YoutubeModel> listData;
   final bool isMiniList;
   final bool isHorizontalList;
 
   const VideoList(
-      { required this.listData,
+      {required this.listData,
       this.isMiniList = false,
       this.isHorizontalList = false});
 
